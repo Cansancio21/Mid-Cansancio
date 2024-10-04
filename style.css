@@ -32,38 +32,34 @@ header{
       display: flex;
       margin: 3vw;
       margin: 0 auto;
-      height: 800px;
+      height: 520px;
       background-color: #E3C39D;
-    align-items: center;
-    justify-content: center;
-    gap: 20vw;
+      align-items: center;
+      justify-content: center;
+      gap: 20vw;
 }
 
 .left img{
     
-    margin-left: 490px;
+    margin-left: 140px;
     margin-top: -50px;
-    width: 40%;
+    width: 50%;
 }
 
 
 .right p{
     
     font-size: 20px;
-    margin-top: 120px;
+    margin-top: 210px;
 }
 
 p{
-   margin-left: -70%;
- 
-
+   margin-left: -73%;
 
 }
 
-
-
 h2{
-   margin-left: 100%;
+   margin-left: 80%;
    margin-top: 150px;
    width: 30%;
    font-size: 35px; 
@@ -83,7 +79,7 @@ span{
 nav{
     margin: 0 auto;
     margin-right: 70px;
-    font-weight: 650;
+   
 }
 
 nav a{
@@ -97,6 +93,43 @@ nav a{
     padding-top: 50px; 
 }
 
+.button .btn{
+    width: 120px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #404040;
+    color: whitesmoke;
+    border-radius: 10px;
+    margin-left: -385px;
+  
+
+}
+
+nav ul{
+
+    margin-top: 10px;
+    margin-left: 120px;
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin: 0 auto;
+    transition: 0.3 ease;
+    font-weight: 650;
+    gap: 20px;
+
+}
+
+
+
+nav b{
+    color: #fff;
+    margin-right: 10px;
+}
+
+nav d{
+    color:  #964B00;
+    margin-left: 10px;
+
+}
 
 
 
