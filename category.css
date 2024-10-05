@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #4b2e2e;
+  color: #fff;
+}
+.title {
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.subtitle {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+.coffee-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+.coffee-item {
+  text-align: center;
+}
+.coffee-item img {
+  width: 150px;
+  height: 200px;
+  margin: 0 auto;
+}
+.coffee-name {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
