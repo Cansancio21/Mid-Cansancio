@@ -23,7 +23,6 @@ header {
   display: flex;
   justify-content: space-between;
   background: #4c2b08;
-  backdrop-filter: blur(10px);
 
   z-index: 100;
 }
@@ -63,9 +62,9 @@ h2 {
 }
 
 h1 {
-  font-weight: 200;
-  font-size: 45px;
+  font-size: 3rem;
   margin-top: -20px;
+  font-weight: 2rem;
 }
 
 span {
@@ -84,7 +83,7 @@ nav a {
   font-weight: 200;
   transition: 0.3 ease;
   color: #fff;
-  font-weight: 650;
+
   padding-top: 50px;
 }
 
