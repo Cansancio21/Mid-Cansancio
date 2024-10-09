@@ -1,13 +1,12 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: #4c2b08;
   color: #fff;
-  height: 500px;
 }
 
 span {
@@ -30,8 +29,9 @@ header {
   padding-left: 2.5%;
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
   z-index: 100;
+  background-color: #4c2b08;
 }
 
 nav {
@@ -43,8 +43,8 @@ nav a {
   text-decoration: none;
   font-size: 1.3rem;
   margin-left: 2rem;
-  font-weight: 200;
-  transition: 0.3 ease;
+  font-weight: 33rem;
+  transition: 0.3s ease;
   color: #fff;
 }
 
@@ -56,17 +56,101 @@ nav a {
   margin-top: 140px;
   background-color: #e3c39d;
 }
+
 .coffee-item {
   text-align: center;
 }
+
 .coffee-item img {
   width: 150px;
   height: 200px;
   margin: 0 auto;
 }
+
 .coffee-name {
   font-family: "Great Vibes", cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 0.5rem;
-  color: #565656;
+  color: #000000;
+}
+
+@media (max-width: 1024px) {
+  .coffee-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .coffee-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav a {
+      font-size: 1rem;
+      margin-left: 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  h1{
+     margin-left: 10rem;
+    
+  }
+
+  nav {
+      margin: 0;
+      margin-top: 1rem;
+      
+    
+  }
+
+  nav a {
+      font-size: 1rem;
+      margin-left: 4rem;
+      margin-top: 1rem;
+      
+  }
+}
+
+@media (max-width: 480px) {
+  .coffee-grid {
+      grid-template-columns: 1fr;
+  }
+
+  nav {
+      margin: 0;
+      margin-top: 1rem;
+  }
+
+  
+  nav a {
+      font-size: 1rem;
+      margin-left: 4rem;
+      margin-top: 1rem;
+  }
+
+  header {
+      padding: 1.5rem 2%;
+      padding-left: 2.5%;
+  }
+}
+
+@media (max-width: 320px){
+  h1{
+    margin-left: 13px;
+  }
+
+  nav a{
+    margin-left: 3rem;
+    margin-top: -15px;
+  }
+
+  header{
+    height: 10px;
+  }
 }
