@@ -26,7 +26,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  height: 10px;
+  height: 20px;
   left: 0;
   padding: 2.5rem 2%;
   padding-left: 2.5%;
@@ -46,7 +46,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-left: 2rem;
   font-weight: 33rem;
   transition: 0.3s ease;
@@ -69,8 +69,8 @@ nav a {
 }
 
 .coffee-item img {
-  width: 170px;
-  height: 150px;
+  width: 230px;
+  height: 200px;
   margin: 0 auto;
 }
 
@@ -84,13 +84,13 @@ nav a {
 
 @media (max-width: 1250px){
   .coffee-item img {
-    width: 250px;
-    height: 250px;
-    margin-top: 70px;
+    width: 230px;
+    height: 180px;
+    margin-top: 10px;
   }
 
   header{
-    height: 70px;
+    height: 30px;
   }
 }
 
@@ -110,13 +110,31 @@ nav a {
 
 }
 
+@media (max-width: 823px) {
+  .coffee-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .coffee-item img {
+    width: 200px;
+    height: 170px;
+    margin-top: 15px;
+    
+  }
+  header{
+    height: 20px;
+  }
+
+}
+
+
+
 @media (max-width: 768px) {
   .coffee-grid {
       grid-template-columns: repeat(2, 1fr);
   }
 
   nav a {
-      font-size: 1rem;
+      font-size: 1.5rem;
       margin-left: 1rem;
   }
 
@@ -160,11 +178,12 @@ nav a {
       margin: 0;
       margin-top: 1rem;
       
+      
     
   }
 
   nav a {
-      font-size: 1rem;
+      font-size: 1.3rem;
       margin-left: 4rem;
       margin-top: 1rem;
       
@@ -179,7 +198,7 @@ nav a {
 
 @media (max-width: 480px){
    h1{
-    margin-left: 6.5rem;
+    margin-left: 9rem;
    }
    .coffee-item img {
     width: 260px;
@@ -190,13 +209,29 @@ nav a {
    
 
   nav a{
-    margin-left: 3rem;
+    margin-left: 2.5rem;
     margin-top: -15px;
+    font-size: 1.3rem;
   }
 
   header{
     height: 70px;
   }
+}
+
+@media (max-width: 405px){
+  header{
+    height: 10vh;
+  }
+  nav a{
+   
+    font-size: 1.1rem;
+  }
+  h1{
+    
+   margin-left: 5.5rem;
+  }
+
 }
 
 @media (max-width: 312px){
@@ -207,7 +242,8 @@ nav a {
     margin: 0 auto;
   }
   h1{
-   margin-left: 4.5rem;
+    font-size: 2.5rem;
+   margin-left: 1.5rem;
   }
 
  nav a{
@@ -222,22 +258,32 @@ nav a {
  }
 }
 
-@media (max-width: 233px){
+@media (max-width: 245px){
   h1{
-   margin-left: 1.5rem;
-  }
+   margin-left: 2.5rem;
+  } 
 
  nav a{
    margin-left: 3rem;
-   margin-top: -15px;
+   margin-top: 2rem;
+   font-size: 1.1rem;
  }
 
  header{
-  height: 90px;
+  height: 10vh;
  }
 
  .coffee-grid{
   margin-top: 130px;
  }
+}
+
+@media (max-width: 230px){
+  nav a{
+    font-size: 1.1rem;
+  }
+  header{
+    height: 10vh;
+  }
 }
 

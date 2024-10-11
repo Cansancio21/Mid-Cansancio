@@ -30,7 +30,7 @@ header {
   display: flex;
   margin: 3vw;
   margin: 0 auto;
-  height: 530px;
+  height: 90vh;
   background-color: #e3c39d;
   align-items: center;
   justify-content: center;
@@ -38,18 +38,20 @@ header {
 }
 
 .left img {
-  margin-left: 140px;
+  margin-left: 170px;
   margin-top: -50px;
   width: 50%;
 }
 
 .right p {
-  font-size: 20px;
+  font-size: 1.3rem;
   margin-top: 210px;
+ 
 }
 
 p {
-  margin-left: -73%;
+  margin-left: -75%;
+ 
 }
 
 h2 {
@@ -92,7 +94,7 @@ nav a {
   background-color: #404040;
   color: whitesmoke;
   border-radius: 10px;
-  margin-left: -400px;
+  margin-left: -500px;
 }
 
 nav ul {
@@ -115,13 +117,25 @@ nav d {
   margin-left: 10px;
 }
 
+@media (max-width: 1397px){
+  .button .btn{
+    margin-left: -380px;
+  }
+   p{
+    margin-left: -70%;
+  }
+  h2{
+    margin-left: 85%;
+    font-size: 2.5rem;
+  }
+}
 
 
 @media (max-width: 1250px) {
   .wrapper {
     flex-direction: column;
     height: auto;
-    gap: 2vw;
+    gap: 1vw;
   }
 
   .left img {
@@ -165,11 +179,23 @@ nav d {
 
 }
 
+
+@media (max-width: 1100px){
+  header{
+    height: 15px;
+  }
+
+  h2{
+    margin-top: 100px;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+    height: 45px;
   }
 
   nav {
@@ -183,7 +209,7 @@ nav d {
 
   .wrapper {
     margin: 1vw;
-    gap: 1vw;
+    gap: 4vw;
   }
 
   .left img {
@@ -227,6 +253,7 @@ nav d {
 @media (max-width: 600px) {
   header {
     padding: 0.5rem;
+    height: 70px;
   }
 
   nav {
@@ -245,7 +272,7 @@ nav d {
 
   .wrapper {
     margin: 0.5vw;
-    gap: 0.5vw;
+    gap: 3vw;
   }
 
   .right p {
@@ -254,15 +281,15 @@ nav d {
 
   h2 {
     font-size: 24px;
-    margin-top: 6rem;
+    margin-top: 5.5rem;
   }
 
   h1 {
-    font-size: 2rem;
-    margin-top: 10px;
+    font-size: 2.5rem;
+    margin-top: -5px;
   }
 
-  .button .btn {
+  .button .btn {  
     width: 120px;
     height: 40px;
     margin: 0 auto;
@@ -271,11 +298,27 @@ nav d {
   }
 }
 
+@media(max-width: 545px){
+ 
+}
+
+
+
 
 @media (max-width: 150px){
   h2 {
     font-size: 24px;
     margin-top: 8rem;
+   
   }
 
+  
+
+  header{
+    height: 105px;
+  }
+
+  h1{
+    margin-right: 2rem;
+  }
 }
