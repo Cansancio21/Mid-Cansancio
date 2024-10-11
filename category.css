@@ -7,6 +7,8 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #4c2b08;
   color: #fff;
+  overflow-y: auto;
+ 
 }
 
 span {
@@ -24,6 +26,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  height: 10px;
   left: 0;
   padding: 2.5rem 2%;
   padding-left: 2.5%;
@@ -32,11 +35,13 @@ header {
   align-items: center;
   z-index: 100;
   background-color: #4c2b08;
+  
 }
 
 nav {
   margin: 0 auto;
   margin-right: 70px;
+
 }
 
 nav a {
@@ -46,6 +51,8 @@ nav a {
   font-weight: 33rem;
   transition: 0.3s ease;
   color: #fff;
+  
+  
 }
 
 .coffee-grid {
@@ -53,7 +60,7 @@ nav a {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   padding: 1rem;
-  margin-top: 140px;
+  margin-top: 90px;
   background-color: #e3c39d;
 }
 
@@ -62,8 +69,8 @@ nav a {
 }
 
 .coffee-item img {
-  width: 150px;
-  height: 200px;
+  width: 170px;
+  height: 150px;
   margin: 0 auto;
 }
 
@@ -74,10 +81,33 @@ nav a {
   color: #000000;
 }
 
-@media (max-width: 1024px) {
+
+@media (max-width: 1250px){
+  .coffee-item img {
+    width: 250px;
+    height: 250px;
+    margin-top: 70px;
+  }
+
+  header{
+    height: 70px;
+  }
+}
+
+@media (max-width: 1080px) {
   .coffee-grid {
       grid-template-columns: repeat(3, 1fr);
   }
+  .coffee-item img {
+    width: 230px;
+    height: 200px;
+    margin-top: 15px;
+    
+  }
+  header{
+    height: 30px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -89,13 +119,37 @@ nav a {
       font-size: 1rem;
       margin-left: 1rem;
   }
+
+  .coffee-item img {
+    width: 210px;
+    height: 150px;
+    margin-top: 7px;
+    
+  }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 512px) {
+  .coffee-grid {
+    margin-top: 120px; 
+   grid-template-columns: 1fr;
+ }
   header {
       flex-direction: column;
       align-items: flex-start;
+       padding: 1.5rem 2%;
+       height: 70px;
   }
+  .coffee-grid {
+    margin-top: 120px; 
+   
+ }
+
+ .coffee-item img {
+  width: 270px;
+  height: 180px;
+  margin-top: -7px;
+  
+}
 
   h1{
      margin-left: 10rem;
@@ -115,35 +169,25 @@ nav a {
       margin-top: 1rem;
       
   }
-}
-
-@media (max-width: 480px) {
-  .coffee-grid {
-      grid-template-columns: 1fr;
-  }
-
-  nav {
-      margin: 0;
-      margin-top: 1rem;
-  }
-
-  
-  nav a {
-      font-size: 1rem;
-      margin-left: 4rem;
-      margin-top: 1rem;
-  }
-
   header {
-      padding: 1.5rem 2%;
-      padding-left: 2.5%;
-  }
+    padding: 1.5rem 2%;
+    padding-left: 2.5%;
+}
 }
 
-@media (max-width: 320px){
-  h1{
-    margin-left: 13px;
+
+
+@media (max-width: 480px){
+   h1{
+    margin-left: 6.5rem;
+   }
+   .coffee-item img {
+    width: 260px;
+    height: 170px;
+    margin: 0 auto;
+    margin-top: -7px;
   }
+   
 
   nav a{
     margin-left: 3rem;
@@ -151,6 +195,49 @@ nav a {
   }
 
   header{
-    height: 10px;
+    height: 70px;
   }
 }
+
+@media (max-width: 312px){
+
+  .coffee-item img {
+    width: 195px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  h1{
+   margin-left: 4.5rem;
+  }
+
+ nav a{
+
+   margin-left: 2rem;
+   margin-top: -15px;
+   
+ }
+
+ header{
+  height: 70px;
+ }
+}
+
+@media (max-width: 233px){
+  h1{
+   margin-left: 1.5rem;
+  }
+
+ nav a{
+   margin-left: 3rem;
+   margin-top: -15px;
+ }
+
+ header{
+  height: 90px;
+ }
+
+ .coffee-grid{
+  margin-top: 130px;
+ }
+}
+

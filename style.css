@@ -116,7 +116,8 @@ nav d {
 }
 
 
-@media (max-width: 1200px) {
+
+@media (max-width: 1250px) {
   .wrapper {
     flex-direction: column;
     height: auto;
@@ -144,10 +145,10 @@ nav d {
   }
 
   .button .btn {
-    margin-left: 0;
+    margin-left: 270px;
     margin-top: 20px;
-    margin: 0 auto;
-    display: block;
+   
+  
   }
   nav ul {
     margin-top: 10px;
@@ -205,10 +206,9 @@ nav d {
   }
 
   .button .btn {
-    margin-left: 0;
+    margin-left: 235px;
     margin-top: 20px;
-    margin: 0 auto;
-    display: block;
+   
   }
   nav ul {
     margin-top: 10px;
@@ -224,7 +224,7 @@ nav d {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   header {
     padding: 0.5rem;
   }
@@ -263,8 +263,19 @@ nav d {
   }
 
   .button .btn {
-    width: 90px;
-    height: 30px;
-  
+    width: 120px;
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+  margin-top: 20px;
   }
+}
+
+
+@media (max-width: 150px){
+  h2 {
+    font-size: 24px;
+    margin-top: 8rem;
+  }
+
 }
